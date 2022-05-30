@@ -43,6 +43,8 @@ a {
 .header {
   background-color: #F1E4DC;
   
+  border-radius:10px;
+  
   height: 350px;
   
   margin-bottom: 20px;
