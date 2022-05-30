@@ -188,8 +188,9 @@ a {
 .section__box {
   display: flex;
   
-  margin-top: 35px;
-  margin-bottom: 35px;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   
   transition: background-color 0.2s linear;
 }
