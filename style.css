@@ -192,7 +192,7 @@ a {
 }
 
 .section__box:hover {
-  background-color: #eeeeee;
+  background-color: #F1E4DC;
 }
 
 
@@ -215,12 +215,6 @@ a {
 .section__text {
   margin-top: auto;
   margin-bottom: auto;
-  
-  transition: border-bottom 0.2s linear;
-}
-
-.section__text:hover {
-  border-bottom: 4px solid #32435f;
 }
 
 .section__title {
