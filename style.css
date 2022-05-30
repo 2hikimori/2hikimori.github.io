@@ -14,7 +14,7 @@ body {
 /*----------head----------*/
 h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 40 auto;
 }
 
 a {
@@ -41,7 +41,7 @@ a {
 
 /*----------header----------*/
 .header {
-  /*background-color: #c3ff92; view*/
+  background-color: #F1E4DC;
   
   height: 350px;
   
