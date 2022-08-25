@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Заголовок страницы</title>
-    <link rel="stylesheet" href="style1.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>    <!-- Шапка -->
-        <h1 id="logo">Ями Аниме</h1>
+        <a href=""><img id="logo" src="logo.png" alt="ЯмиАниме"></img></a>
     </header>
     
-    <section>    <!-- Постер -->
+    <section id="sposter">    <!-- Постер -->
         <div id="poster">
             <img src="poster.jpg" alt="Ошибка загрузки"></img>
         </div>
@@ -24,9 +24,11 @@
         <p>Жанры аниме</p>
         <p>Описание аниме</p>
     </section>
-        
-    <section id="play">    <!-- Кнопка -->
-        <b id="btplay">Смотреть</b>
+    
+    <section>    <!-- Видео -->
+        <video id="video" controls="controls" poster="https://gen.jut.su/uploads/preview/861/0/0/7_1661114047.jpg"></iframe>
+            <source src="https://r290201.kujo-jotaro.com/ayumu-shougi/7.720.fc83910082db15df.mp4?hash=226d080876142532a046a0751f6eb4ca&amp;hash2=e1dcd81c429ccfb962697b4b5d4201eb" type="video/mp4">
+        </video>
     </section>
 </body>
 </html>
