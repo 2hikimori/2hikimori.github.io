@@ -1,34 +1,24 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Заголовок страницы</title>
-    <link rel="stylesheet" href="style1.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>login</title>
 </head>
-
+    
 <body>
-    <header>    <!-- Шапка -->
-        <a href=""><img id="logo" src="logo.png" alt="ЯмиАниме"></img></a>
-    </header>
-    
-    <section id="sposter">    <!-- Постер -->
-        <div id="poster">
-            <img src="poster.jpg" alt="Ошибка загрузки"></img>
+    <div class="background">
+        <img src="aniyami.png" alt="ANIYAMI">
+
+        <div class="enter">
+                <input class="text" name="login" placeholder="Логин" type="text">
+                <br>
+                <input class="password" name="password" placeholder="Пароль" type="password">
         </div>
-    </section>
+
+        <div class="button">
+            <div class="login">Войти</div>
+            <div class="registration">Регистрация</div>
+        </div>
+    </div>
     
-    <section>    <!-- Инфа -->
-        <p>Название аниме</p>
-        <p>Какая-то инфа</p>
-        <p>Жанры аниме</p>
-        <p>Описание аниме</p>
-    </section>
-    
-    <section>    <!-- Видео -->
-        <video id="video" controls="controls" poster="https://gen.jut.su/uploads/preview/852/0/0/8_1661365567.jpg">
-            <source src="https://r22005.kujo-jotaro.com/lycoreco/8.720.6a4b357dd89b6487.mp4?hash=a1e94ac067ce8bbc1856519a06b33bb7&amp;hash2=dd36fb79694501416b202f18e7893491" type="video/mp4">
-        </video>
-    </section>
 </body>
 </html>
