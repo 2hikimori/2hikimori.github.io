@@ -34,6 +34,7 @@ body{
 .enter input{
     height: 60px;
     width: 500px;
+    max-width: 500px;
     padding: 20px;
     border: none;
     border-radius: 10px;
@@ -56,6 +57,7 @@ body{
 
 .button{
     width: 500px;
+    max-width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,6 +71,7 @@ body{
     background: #FFA500;
     height: 60px;
     width: 225px;
+    max-width: 225px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +82,7 @@ body{
     color: #fff;
     height: 60px;
     width: 225px;
+    max-width: 225px;
     display: flex;
     align-items: center;
     justify-content: center;
