@@ -1,0 +1,143 @@
+footer {
+    background: var(--dark);
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    z-index: 100;
+    min-height: 250px;
+}
+
+.footer .info img {
+    margin-bottom: 15px;
+}
+
+.footer .info p, .footer .police a, .footer .nav a {
+    color: var(--light);
+}
+
+.footer li {
+    padding-bottom: 5px;
+}
+
+.footer .contacts {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer .contact {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--red);
+}
+
+.footer__top-block {
+    background: rgba(28, 29, 36, 0.95);
+    height: 280px;
+    width: 100%;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 25;
+    height: 100%;
+    color: var(--light);
+    position: relative;
+}
+
+.footer__top .text {
+    width: 380px;
+}
+
+.footer__top .title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer__top span {
+    color: var(--red);
+}
+
+.footer__top .description {
+    color:#F5EEE6BF;
+}
+
+.footer__top img {
+    z-index: 1;
+    top: -35px;
+    position: relative;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .footer .contacts {
+        gap: 15px;
+    }
+
+    .footer .contact {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .footer__top .title {
+        font-size: 28px;
+    }
+
+    .footer__top img {
+        top: -5px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer__top .text {
+        width: 300px;
+    }
+
+    .footer__top .title {
+        font-size: 24px;
+    }
+
+    .footer__top .description {
+        font-size: 14px;
+    }
+
+    .footer__top img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer__top .text {
+        width: 350px;
+        text-align: center;
+        top: 50px;
+        position: relative;
+    }
+
+    .footer__top .title {
+        font-size: 20px;
+    }
+
+    .footer__top .description {
+        font-size: 14px;
+    }
+
+    .footer__top img {
+        width: 225px;
+        position: absolute;
+        top: -60px;
+    }
+}

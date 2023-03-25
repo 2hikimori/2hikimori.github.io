@@ -1,0 +1,746 @@
+.top__anime {
+    margin-top: 150px;
+    margin-right: 0;
+    margin-bottom: 80px;
+}
+
+.top__anime .anime__cards {
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    overflow: scroll;
+}
+
+.top__anime .anime__card-list {
+    display: flex;
+    gap: 35px;
+    overflow: scroll;
+    
+}
+
+.anime__bigcard {
+    min-width: 720px;
+    max-width: 720px;
+    height: 440px;
+    background: var(--white);
+    border: 1px solid #1c1d2426;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+}
+
+.anime__bigcard .poster {
+    height: 100%;
+    width: auto;
+}
+
+.card__info {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__info th {
+    padding-bottom: 25px;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card__info td {
+    vertical-align: top;
+    min-width: 100px;
+    padding-bottom: 10px;
+}
+
+.card__info .description {
+    max-height: 140px;
+    overflow-y: scroll;
+}
+
+.card__info .description::-webkit-scrollbar {
+    display: block;
+    content: none;
+}
+
+.top__anime .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.top__anime .buttons button {
+    height: 45px;
+    border-radius: 10px;
+}
+
+.top__anime .watch {
+    width: 100%;
+    background: var(--red);
+}
+
+.top__anime .watch a {
+    color: var(--light);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .anime__bigcard {
+        min-width: 650px;
+        max-width: 650px;
+        height: 400px;
+    }
+
+    .card__info th {
+        padding-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .card__info td {
+        padding-bottom: 8px;
+    }
+
+    .card__info .description {
+        max-height: 135px;
+    }
+
+    .top__anime .buttons button {
+        height: 40px;
+        border-radius: 10px;
+    }
+    .top__anime .buttons svg {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .anime__bigcard {
+        min-width: 585px;
+        max-width: 585px;
+        height: 360px;
+    }
+
+    .card__info th {
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .card__info td {
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .card__info .description {
+        max-height: 120px;
+    }
+}
+
+/* Конец єлемента anime__cards */
+
+.top__anime .card {
+    height: 440px;
+    width: 275px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #1c1d2426;
+    border-radius: 15px;
+}
+
+.card .poster {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 15px;
+}
+
+.card .card__info {
+    padding: 0;
+}
+
+.card .card__info th{
+    padding-bottom: 10px;
+}
+
+.card .card__info .genres {
+    max-height: 19px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+    .top__anime .card {
+        height: 400px;
+        width: 250px;
+    }
+
+    .card .poster {
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .top__anime .card {
+        height: 360px;
+        width: 225px;
+    }
+
+    .card .poster {
+        height: 200px;
+    }
+}
+
+/*  */
+
+.latest__updates, .announcement {
+    margin-right: 0;
+    margin-bottom: 70px;
+}
+
+.latest__updates .anime__cards, .announcement .anime__cards {
+    display: flex;
+    gap: 35px;
+    overflow: scroll;
+}
+
+.latest__updates .title, .announcement .title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.latest__updates .cards, .announcement .cards {
+    display: flex;
+    gap: 35px;
+}
+
+.latest__updates .card, .announcement .card {
+    height: 320px;
+    min-width: 215px;
+    max-width: 215px;
+    background: var(--white);
+    border: 1px solid rgba(28, 29, 36, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.latest__updates .poster, .announcement .poster {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.latest__updates .name, .announcement .name {
+    margin: 0 15px;
+    max-height: 40px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.latest__updates .grade, .announcement .grade {
+    position: absolute;
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 75px;
+    height: 30px;
+    border-radius: 100px;
+    left: 15px;
+    top: 200px;
+}
+
+.latest__updates .grade p, .announcement .grade p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .latest__updates .title, .announcement .title {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .latest__updates .card, .announcement .card {
+        height: 290px;
+        min-width: 195px;
+        max-width: 195px;
+    }
+
+    .latest__updates .poster, .announcement .poster {
+        height: 225px;
+        margin-bottom: 10px;
+    }
+    
+    .latest__updates .name, .announcement .name {
+        margin: 0 15px;
+        max-height: 40px;
+    }
+
+    .latest__updates .grade, .announcement .grade {
+        gap: 4px;
+        width: 75px;
+        height: 30px;
+        left: 15px;
+        top: 180px;
+    }
+    
+    .latest__updates .grade p, .announcement .grade p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .latest__updates .title, .announcement .title {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    .latest__updates .card, .announcement .card {
+        height: 260px;
+        min-width: 175px;
+        max-width: 175px;
+    }
+
+    .latest__updates .poster, .announcement .poster {
+        height: 200px;
+        margin-bottom: 7px;
+    }
+    
+    .latest__updates .name, .announcement .name {
+        margin: 0 15px;
+        max-height: 40px;
+        font-size: 15px;
+    }
+
+    .latest__updates .grade, .announcement .grade {
+        gap: 4px;
+        width: 75px;
+        height: 30px;
+        left: 15px;
+        top: 155px;
+    }
+    
+    .latest__updates .grade p, .announcement .grade p {
+        font-size: 14px;
+    }
+}
+
+/*  */
+
+.announcement {
+    margin-bottom: 250px;
+}
+
+/*  */
+
+.schedule {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 200px;
+}
+
+.schedule .days {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.schedule .day {
+    width: 200px;
+    height: 50px;
+    background: var(--white);
+    border: 1px solid rgba(28, 29, 36, 0.15);
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.schedule .day-active {
+    background: var(--red);
+    color: var(--light);
+    border: none;
+}
+
+.schedule .cards {
+    display: flex;
+    gap: 50px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+}
+
+.schedule .card {
+    height: 190px;
+    width: 450px;
+    border: 1px solid rgba(28, 29, 36, 0.15);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.schedule .poster {
+    border-radius: 12px;
+    max-width: 100px;
+    max-height: 140px;
+    margin-bottom: 0;
+    object-fit: cover;
+}
+
+.schedule .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.schedule .info table {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.schedule .info th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.schedule .info tr {
+    vertical-align: top;
+}
+
+.schedule .info .grade {
+    display: flex;
+    gap: 4;
+    align-items: center;
+    justify-content: center;
+    background: var(--light);
+    height: 30px;
+    width: 70px;
+    border-radius: 100px;
+}
+
+.schedule .info .grade p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.schedule .info .genres-title {
+    padding-right: 20px;
+}
+
+.schedule .info .genres {
+    max-height: 20px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+    .schedule .card {
+        height: 170px;
+        width: 405px;
+        padding: 25px;
+    }
+    
+    .schedule .poster {
+        border-radius: 10px;
+        max-width: 90px;
+        max-height: 120px;
+    }
+
+    .schedule .info table {
+        margin-bottom: 10px;
+    }
+
+    .schedule .info tbody {
+        font-size: 15px;
+    }
+    
+    .schedule .info th {
+        font-size: 18px;
+        padding-bottom: 7px;
+    }
+    
+    .schedule .info .grade {
+        gap: 4px;
+        height: 30px;
+        width: 70px;
+    }
+    
+    .schedule .info .grade p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .schedule .cards {
+        gap: 35px;
+        row-gap: 20px;
+    }
+
+    .schedule .card {
+        height: 155px;
+        width: 325px;
+        padding: 20px;
+    }
+    
+    .schedule .poster {
+        border-radius: 10px;
+        max-width: 80px;
+        max-height: 110px;
+    }
+
+    .schedule .info table {
+        margin-bottom: 10px;
+    }
+
+    .schedule .info tbody {
+        font-size: 14px;
+    }
+    
+    .schedule .info th {
+        font-size: 16px;
+        padding-bottom: 7px;
+    }
+    
+    .schedule .info .grade {
+        gap: 3px;
+        height: 25px;
+        width: 65px;
+    }
+    
+    .schedule .info .grade p {
+        font-size: 12px;
+    }
+
+    .schedule .info .grade svg {
+        width: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .schedule {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 200px;
+    }
+
+    .schedule .days {
+        gap: 25px;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    
+    .schedule .day {
+        min-width: 150px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+}
+
+/*  */
+
+.donate__banner {
+    height: 400px;
+    background: var(--white);
+    border: 1px solid rgba(28, 29, 36, 0.15);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+    gap: 150px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.donate__banner .text {
+    max-width: 450px;
+}
+
+.donate__banner span {
+    color: var(--red);
+}
+
+.donate__banner .title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.donate__banner .description {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark75);
+    margin-bottom: 40px;
+}
+
+.donate__banner .wallets__title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.donate__banner .wallets {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.donate__banner .wallet, .donate__banner .others {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--dark);
+}
+
+.donate__banner img {
+    position: relative;
+    bottom: 80px;
+}
+
+@media screen and (max-width: 1440px) {
+    .donate__banner {
+        gap: 100px;
+    }
+
+    .donate__banner .text {
+        max-width: 400px;
+    }
+
+    .donate__banner .title {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .donate__banner .description {
+        margin-bottom: 30px;
+    }
+
+    .donate__banner .wallets__title {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .donate__banner .wallets {
+        gap: 20px;
+    }
+    
+    .donate__banner .wallet, .donate__banner .others {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .donate__banner img {
+        position: relative;
+        bottom: 56px;
+        height: 510px;
+        width: 470px;
+        object-fit:contain;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .donate__banner {
+        gap: 50px;
+        padding: 0 25px;
+    }
+
+    .donate__banner .text {
+        max-width: 340px;
+    }
+
+    .donate__banner .title {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .donate__banner .description {
+        margin-bottom: 30px;
+    }
+
+    .donate__banner .wallets__title {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .donate__banner .wallets {
+        gap: 15px;
+    }
+    
+    .donate__banner .wallet, .donate__banner .others {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .donate__banner img {
+        position: relative;
+        bottom: 31px;
+        height: 460px;
+        width: 420px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .donate__banner {
+        padding: 0 25px;
+        min-height: 400px;
+        flex-direction: column-reverse;
+    }
+
+    .donate__banner .text {
+        max-width: 340px;
+        position: relative;
+        top: 50px;
+    }
+
+    .donate__banner .title {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .donate__banner .description {
+        margin-bottom: 30px;
+    }
+
+    .donate__banner .wallets__title {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .donate__banner .wallets {
+        gap: 15px;
+    }
+    
+    .donate__banner .wallet, .donate__banner .others {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .donate__banner img {
+        position: absolute;
+        top: -120px;
+        height: 260px;
+        width: 220px;
+    }
+}
